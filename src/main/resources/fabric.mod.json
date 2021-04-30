@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "fire-brigade",
+  "version": "${version}",
+
+  "name": "Fire Brigade",
+  "description": "Better parsing for Brigadier",
+  "authors": [
+    "Mary Strodl <ipadlover8322@gmail.com>"
+  ],
+  "contact": {
+    "homepage": "https://coolmathgames.tech/",
+    "sources": "https://github.com/Mstrodl/fire-brigade"
+  },
+
+  "license": "MIT",
+  "icon": "assets/fire-brigade/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "gfh:prePreLaunch": [
+      "tech.coolmathgames.brigade.EntryPoint"
+    ]
+  },
+  "mixins": [
+    "fire-brigade.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+  }
+}
